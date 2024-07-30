@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Module</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .style{
+            background-color: bisque;
+            text-align: center;
+            top: 0;
+            bottom: 0;
+            border: 1px solid black;
+        }
+        .style1{
+            background-color: pink;
+            border: 1px solid black;
+
+        }
+    </style>
+
+</head>
+<body>
+    
+    <script>
+        // let num;
+        // var msg;
+        // var num1 = 12;
+
+        // alert("Welcome to JavaSCript")
+        // document.write("<h1 style='color:blue'>Heyyyy Goood Morning 🤩</h1>")
+        // console.log("Welcome to JavaSCript")
+
+        // alert("Welcome to"  + num1)
+        // document.write("<h1 style='color:blue'>Heyyyy Goood Morning 🤩: </h1>" + num1)
+        // console.log(" Welcome to Js: "+num1)
+        
+        
+        // var a = parseInt(prompt("Enter the value of a"))
+        // var b = parseInt(prompt("Enter the value of b"))
+        // var c = a+b;
+        // if(num1=50){
+        //     alert("Hello")
+        // }else{
+        //     alert("Welcome")
+        // }
+        // console.log(`Addition of two num: ${c}`)
+        // document.write(`<h1 style='color:blue'>Heyyyy Goood Morning 🤩: </h1> ${c}`)
+
+        // Area of Triangle
+        // var h = parseInt(prompt("Enter the value of h"))
+        // var b = parseInt(prompt("Enter the value of b"))
+        // var a = h*b
+        // var b = 1/2*a
+        // console.log(`Area of Triangle: ${b}`) 
+        // document.write(`<h1 style='color:blue'> Area of Triangle</h1>: ${b}`)
+
+        //Area of Circle
+        // var r = parseInt(prompt("Enter the value of r"))
+        // var b = r*r
+        // const c = 3.14
+        // var d = c*b
+        // console.log(`Area of Circle: ${d}`) 
+        // document.write(`<h1 style='color:blue'> Area of Circle</h1>: ${d}`)
+
+        //Area of Rectangle
+        // var l = parseInt(prompt("Enter the value of l"))
+        // var b = parseInt(prompt("Enter the value of b"))
+        // var a = l*b
+        // console.log(`Area of Rectangle: ${a}`) 
+        // document.write(`<h1 style='color:blue'> Area of Rectangle</h1>: ${a}`)
+
+        // Accept basic salary from user if bs >= 10000 than hra 10% of bs, ta - 8% of bs, bonus - 15000 otherwise 
+        // hra - 7000, ta - 5000, bonus - 9000, then calculate netsal of employee
+        // netsal = bs + hra + ta + bonus
+        // Output: Basic salary = , HRA = , TA = , Bonus = , netSalary = .
+        var bs = parseInt(prompt("Enter the Basic Salary: "))
+
+        var hra;
+        var ta;
+        var bonus;
+
+        if(bs >= 10000){
+            hra = 0.10*bs;
+            ta = 0.8*bs;
+            bonus = 15000;
+        }else{
+            hra = 7000;
+            ta = 5000;
+            bonus = 9000;
+        }
+        var netSalary = bs + hra + ta + bonus;
+
+        console.log("Basic Salary: ", bs )
+        console.log("HRA = ", hra)
+        console.log("TA = ", ta)
+        console.log("Bonus = ", bonus)
+        document.write(`<h1 class='style'>netSalary = ${netSalary}</h1>`)
+        document.write(`<h3 class='style1'>Basic Salary:</h3> ${bs}`)
+        document.write(`<h3 class='style1'>HRA:</h3> ${hra}`)
+        document.write(`<h3 class='style1'>TA:</h3> ${ta}`)
+        document.write(`<h3 class='style1'>Bonus:</h3> ${bonus}`)
+
+
+        
+    </script>
+    
+</body>
+</html>
