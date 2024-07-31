@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //push() = add one or more elements to the end of an array
+        let numbers = [10,20,30];
+        const length = numbers.push(40);
+        console.log(length);
+        console.log(numbers);
+
+        //unshift() = add one or more elements to the begining of an array
+        let num = [30, 40];
+        const length1 = num.unshift(20);
+        console.log(length1)
+        console.log(num);
+
+        //pop() = remove an element from the end of an array
+        const num2 = [10,20,30,40];
+        const last = num2.pop();
+        console.log(last);
+        console.log(num2);
+
+        //shift() = remove the first element from an array
+        const num3 = [10,20,30,40]
+        let first = num3.shift();
+        console.log(first);
+        console.log(num3);
+
+        //length() = count the length of the array
+        const num4 = [10,20,30,40]
+        let length2 = num4.length
+        console.log(length2);
+        console.log(num4);
+
+        // splice() = Manipulate elements in an array such as deleting, inserting, and replacing elements
+        let fruits = ["apple", "pear", "mango", "kivi", "dragen"]; // position specifies the position of the first item to delete & num argument determines the number of elements to delete
+        let deleteItems = fruits.splice(2,2);
+        console.log(deleteItems);
+        console.log(fruits);
+    
+        // slice() = copy of an array
+        // var colours = ['red', 'green', 'blue', 'yellow', 'purple'];
+        // var rgb = colors.slice(0,3);
+
+    </script>
+</head>
+<body>
+    <h1>Array Methods</h1>
+
+</body>
+</html>

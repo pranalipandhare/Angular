@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var arr = ["Java", "C", "C++"]
+        console.log(arr);
+        console.log(arr[2]);
+
+        var fruits =  new Array("KIVI", "Orange", "Banana");
+        console.log(fruits);
+        console.log(fruits[2]);
+
+        var city = new Array(3);
+        city[0] = "Pune";
+        city[1] = "Beed";
+        city[2] = "Mumbai";
+        city[3] = "SambhajiNagar"
+        console.log(city);
+
+        var range = parseInt(prompt("Enter range: "))
+        var arr1 = [];
+        //read array here
+        for(var i = 0; i<range; i++){
+            arr1[i] = parseInt(prompt(`Enter ${i} element : -`));
+        }
+        //display array
+        for(var i = 0; i <range; i++){
+            console.log(arr1[i])
+        }
+        //console.log(arr1);
+
+        console.log("____________");
+        for(let i of arr1){
+            console.log(i);
+        }
+        console.log("____________");
+        arr1.forEach((i)=>{
+        console.log(i)
+        })
+        // WAP n to print max number in an array 
+        var max = arr1[0]
+        for(var i = 1; i<range; i++)
+        {
+            if(max < arr1[i]){
+                max = arr1[i];
+            }
+        }
+        console.log(arr1);
+        console.log(`Max Number : - ${max}`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
